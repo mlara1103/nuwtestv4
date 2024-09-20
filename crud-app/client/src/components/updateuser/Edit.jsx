@@ -46,27 +46,27 @@ const Edit = () => {
 
   return (
     <div className='addUser'>
-        <Link to={"/"}>Back</Link>
-        <h3>Update user</h3>
+        <Link to={"/"}>Volver atrás</Link>
+        <h3>Estas editando la boleta seleccionada</h3>
         <form className='addUserForm' onSubmit={submitForm}>
             <div className="inputGroup">
-                <label htmlFor="nboletas">First name</label>
-                <input type="text" value={user.nboletas} onChange={inputChangeHandler} id="nboletas" name="nboletas" autoComplete='off' placeholder='First name' />
+                <label htmlFor="nboletas">Numero de Boletas</label>
+                <input type="text" value={user.nboletas} onChange={inputChangeHandler} id="nboletas" name="nboletas" autoComplete='off' placeholder='Ingrese numero de boletas' />
             </div>
             <div className="inputGroup">
-                <label htmlFor="vcefectivo">Last name</label>
-                <input type="number" value={user.vcefectivo} onChange={inputChangeHandler} id="vcefectivo" name="vcefectivo" autoComplete='off' placeholder='Last name' />
+                <label htmlFor="vcefectivo">Ventas con Efectivo</label>
+                <input type="number" value={user.vcefectivo} onChange={inputChangeHandler} id="vcefectivo" name="vcefectivo" autoComplete='off' placeholder='Ingrese la venta con efectivo' />
             </div>
             <div className="inputGroup">
-                <label htmlFor="email">vsefectivo</label>
-                <input type="number" value={user.vsefectivo} onChange={inputChangeHandler} id="vsefectivo" name="vsefectivo" autoComplete='off' placeholder='Email' />
+                <label htmlFor="email">Ventas con Tarjeta</label>
+                <input type="number" value={user.vsefectivo} onChange={inputChangeHandler} id="vsefectivo" name="vsefectivo" autoComplete='off' placeholder='Ingrese las ventas con tarjeta' />
             </div>
             {/* <div className="inputGroup">
                 <label htmlFor="email">Email</label>
                 <input type="email" value={user.email} onChange={inputChangeHandler} id="email" name="email" autoComplete='off' placeholder='Email' />
             </div>*/}
             <div className="inputGroup">
-                <button type="submit">UPDATE USER</button>
+                <button type="submit">Actualizar dia</button>
             </div>
         </form>
     </div>
