@@ -7,8 +7,9 @@ import toast from 'react-hot-toast';
 const Edit = () => {
 
  const users = {
-    fname: "",
-    lname: "",
+    nboletas: "",
+    vcefectivo: "",
+    vsefectivo:"",
     email: ""
  }
 
@@ -49,17 +50,21 @@ const Edit = () => {
         <h3>Update user</h3>
         <form className='addUserForm' onSubmit={submitForm}>
             <div className="inputGroup">
-                <label htmlFor="fname">First name</label>
-                <input type="text" value={user.fname} onChange={inputChangeHandler} id="fname" name="fname" autoComplete='off' placeholder='First name' />
+                <label htmlFor="nboletas">First name</label>
+                <input type="text" value={user.nboletas} onChange={inputChangeHandler} id="nboletas" name="nboletas" autoComplete='off' placeholder='First name' />
             </div>
             <div className="inputGroup">
-                <label htmlFor="lname">Last name</label>
-                <input type="text" value={user.lname} onChange={inputChangeHandler} id="lname" name="lname" autoComplete='off' placeholder='Last name' />
+                <label htmlFor="vcefectivo">Last name</label>
+                <input type="number" value={user.vcefectivo} onChange={inputChangeHandler} id="vcefectivo" name="vcefectivo" autoComplete='off' placeholder='Last name' />
             </div>
             <div className="inputGroup">
+                <label htmlFor="email">vsefectivo</label>
+                <input type="number" value={user.vsefectivo} onChange={inputChangeHandler} id="vsefectivo" name="vsefectivo" autoComplete='off' placeholder='Email' />
+            </div>
+            {/* <div className="inputGroup">
                 <label htmlFor="email">Email</label>
                 <input type="email" value={user.email} onChange={inputChangeHandler} id="email" name="email" autoComplete='off' placeholder='Email' />
-            </div>
+            </div>*/}
             <div className="inputGroup">
                 <button type="submit">UPDATE USER</button>
             </div>
