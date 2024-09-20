@@ -1,8 +1,5 @@
-Project name: crud application using mern stack
-Poject author: thewebsources
-website-name: https://thewebsources.com/
-Youtube-channel: https://www.youtube.com/@thewebsources
-Video-link: https://youtu.be/3ywB6hstbfw
+Project name: Beta test trabajando ver si funciona github
+Poject author: internet
 
 =========================================================================
 
